@@ -1,0 +1,30 @@
+This is a list of brief descriptions of the files in this folder. This is essentially a dump of the files in my working directory, so they aren't necessarily organized too well. They are listed in roughly chronological order. 
+
+exampledata.root	An example dataset, precut. In a TTree named Candidates.
+macro1.C, macrotest.C, test.c, test2.C	Simple examples off of the docs/ test to get Root working
+background.c		Attempting to do some simple cutting experiments, before learning about >> in Root. Also some experiments with using a score function instead of cuts
+example_data_2.root	copied from some data somewhere
+treereader.c		Lists out the names of the branches of a TTree. This was to see what branches were available to mess with.
+exampledata_3.root	Another copied dataset. Doesn't look like its been cut.
+jpsifit.c		A simple single cut analysis
+graphutils.c		Testing some stuff from Paus's MitRootStyle package
+example.cpp		Modified off of some example code supplied by someone else. Varies a single cut.
+cut_analysis.c		Continuation of work started in example.cpp
+multivar_optim.c	Further work on cut optimization, optimizes two cuts together.
+multivar_optim_v2.c	Optimizes arbitrary lists of variables to be cut along.
+varrange.h		A header file containing a list of variables and reasonable ranges to vary them along. 
+cut_plotter.c		Generates plots of the mass distribution of the optimized cuts. 
+lifetime_file.cpp	Generates and saves a t2 mass and lifetime decay histogram using the optimized cuts.
+old_saved_hist.root	A 2d histogram containing mass and decay time data.
+tau_reader.cpp		Some basic plotting using the saved histogram
+saved_hist.root		Same as old_saved_hist.root but modified in some way that I don't remember. Good luck.
+tau_analysis.cpp	plots sidebands and fits lifetime shoddily.
+MC_hists.root		Three histograms of the decay time, from MC data. h0 is the generated proper time, h1 is the reconstructed, and h2 is reconstructed plus cuts.
+lifetime_hist_reader.cpp	Plots the data contined in MC_hists.root
+filenames.h		Contains paths to the root file being used, so as to prevent further retyping
+lifetime_testing.cpp	plotting and analysis for the MC lifetime data
+simple_accept_rate.root	Presumably a simple histogram of the acceptance rate
+accept_hist.root	The actual acceptance rate histogram
+accept_calibrated.cpp	This calulates the acceptance histogram
+resolution.cpp		Fits a power law model to the resolution.
+accept_rate.cpp		Calculates the actual acceptance histogram?
